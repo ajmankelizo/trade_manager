@@ -33,7 +33,7 @@
       max-width: 1600px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       background: linear-gradient(to right, #1A3B5D, #0B2643);
-      padding: 20px 0;
+      padding: 20px 0px 5px;
       border-radius: 10px;
       margin-top: 10px;
     }
@@ -69,6 +69,22 @@
       font-family: 'Segoe UI', sans-serif;
       flex-direction: column;
       margin: 5px 0;
+    }
+    .aboutclick {
+      display: block;
+      font-size: 12px;
+      text-align: right;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.8);
+      letter-spacing: 0.5px;
+      margin-right: 20px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .aboutclick:hover {
+      color: rgba(255, 255, 255, 1);  /* brighter on hover */
+      text-decoration: underline;      /* underline on hover */
     }
     .landscape-container {
       display: flex;
@@ -700,8 +716,6 @@
       display: block !important;
     }
   }
-
-
   </style>
 </head>
 <body>
@@ -715,6 +729,14 @@
       <div  style="display:flex;flex-direction:column;">
         <h2 class="page-title" style="display: flex;flex-direction: column;align-items: flex-end;">TRADE MANAGER</h2>
         <h2 class="branding" id="brand">by Kelizo</h2> 
+      </div>
+      <div style="display: flex;width: 100%;justify-content: flex-end;flex-direction: row;align-items: center;">
+        <div class="aboutclick" onclick="window.open('https://www.canva.com/design/DAGy2BRf60s/m6cILXATTB5c6brPdZQByw/view?utm_content=DAGy2BRf60s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9276c36798', '_blank');">
+          User Guide
+        </div>
+          <div class="aboutclick" onclick="window.location.href='https://ajmankelizo.github.io/trade_manager/about.html';">
+          About
+        </div>
       </div>
     </div>
   <div class="landscape-container">
