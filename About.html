@@ -1,0 +1,33 @@
+# Trade Manager by Kelizo
+
+## Overview
+Trade Manager is a web-based tool designed for traders to manage and calculate trade details efficiently. It supports brokers like Fyers, Upstox, and Zerodha and allows traders to compute net P&L, charges, risk, and target levels for various trade positions and execution types (Intraday, Delivery).
+
+## Features
+- Calculate net profit and loss based on entry, stoploss, and exit prices.
+- Supports long and short positions.
+- Multiple brokers supported: Fyers, Upstox, Zerodha.
+- Different execution modes: Intraday and Delivery.
+- Calculate trade levels based on stoploss or quantity.
+- Detailed charges breakdown.
+- Manage and save a basket of multiple trades.
+- Intuitive user interface for quick calculations and trade management.
+
+## Usage
+1. Select broker and execution type.
+2. Enter trade details: position (long/short), entry price, stoploss, exit price, and quantity or risk amount.
+3. Click "Calculate" to view target levels, gross and net P&L, and charges.
+4. Add trades to the basket for portfolio management.
+5. Save or import trade data for further analysis.
+
+## Technologies
+- HTML5, CSS, JavaScript
+- Works in modern web browsers
+
+## License
+This project is licensed under BSD-3-Clause license.
+
+## Author
+Ajman Nishal T (Kelizo)
+
+For any issues or suggestions, feel free to contact.
