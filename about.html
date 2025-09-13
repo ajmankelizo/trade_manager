@@ -1,36 +1,165 @@
-# Trade Manager by Kelizo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About • Trade Manager by Kelizo</title>
+  <style>
+    :root {
+      --primary: #2667c9;
+      --primary-light: #e7f1fc;
+      --text: #222;
+      --bg: #f5f7fa;
+      --border: #d3e1f8;
+      --button-bg: #fff;
+      --button-hover: #f0f4fa;
+      --accent: #faad2b;
+      --danger: #f4511e;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      letter-spacing: 0.01em;
+    }
+    #about-btn {
+      position: fixed;
+      top: 18px;
+      left: 18px;
+      z-index: 98;
+      padding: 8px 18px;
+      background: var(--button-bg);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 2px 8px 0 #dde8f8;
+      transition: background 0.2s, border 0.2s;
+    }
+    #about-btn:hover {
+      background: var(--button-hover);
+      border: 1.5px solid var(--accent);
+      color: var(--accent);
+    }
+    .container {
+      max-width: 750px;
+      margin: 80px auto 30px auto;
+      padding: 42px 32px 28px 32px;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 2px 16px 0 #e8f0fa;
+    }
+    h1 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      font-weight: bold;
+    }
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-size: 1.18rem;
+      border-bottom: 1.5px solid var(--primary-light);
+      padding-bottom: 0.15em;
+      letter-spacing: 0.01em;
+    }
+    h2:last-child {
+      margin-bottom: 0.5rem;
+    }
+    ul, ol {
+      margin-left: 1.5em;
+      margin-top: 0.7em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    p {
+      line-height: 1.7;
+      margin-top: 0.7em;
+      margin-bottom: 0.7em;
+    }
+    .disclaimer {
+      margin-top: 2.2rem;
+      color: var(--danger);
+      background: #fff5ef;
+      border-left: 5px solid var(--danger);
+      padding: 16px 24px 16px 18px;
+      border-radius: 10px;
+      font-size: 1.03rem;
+      font-weight: 500;
+    }
+    @media (max-width: 650px) {
+      .container {
+        margin: 60px 0 14px 0;
+        padding: 17px 6vw 16px 7vw;
+        border-radius: 9px;
+      }
+      #about-btn { top: 8px; left: 7px; font-size: 0.98rem; padding: 7px 11px;}
+      h1 { font-size: 1.15rem; }
+      h2 { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <button id="about-btn" onclick="window.location.href='https://ajmankelizo.github.io/trade_manager/'">Back to Home</button>
+  <div class="container">
+    <h1>About Trade Manager</h1>
 
-## Overview
-Trade Manager is a web-based tool designed for traders to manage and calculate trade details efficiently. It supports brokers like Fyers, Upstox, and Zerodha and allows traders to compute net P&L, charges, risk, and target levels for various trade positions and execution types (Intraday, Delivery).
+    <h2>Overview</h2>
+    <p>
+      Trade Manager is a web-based tool for stock and derivatives traders, providing instant calculations for risk, reward, trade levels, and brokerage charges across major Indian brokers (<b>Fyers</b>, <b>Upstox</b>, <b>Zerodha</b>). The tool is designed to save time, reduce manual mistakes, and aid thoughtful trade planning whether for intraday or delivery positions.
+    </p>
 
-## Features
-- Calculate net profit and loss based on entry, stoploss, and exit prices.
-- Supports long and short positions.
-- Multiple brokers supported: Fyers, Upstox, Zerodha.
-- Different execution modes: Intraday and Delivery.
-- Calculate trade levels based on stoploss or quantity.
-- Detailed charges breakdown.
-- Manage and save a basket of multiple trades.
-- Intuitive user interface for quick calculations and trade management.
+    <h2>Features</h2>
+    <ul>
+      <li>Calculate net P&amp;L and trade levels for long/short trades.</li>
+      <li>Brokerage and statutory charges breakdown for compliance.</li>
+      <li>Supports <b>Intraday</b> and <b>Delivery</b> modes.</li>
+      <li>User can input stoploss or desired risk amount to compute targets and position size.</li>
+      <li>Basket function to organize multiple trades at once.</li>
+      <li>Minimal, touch-friendly design for quick use.</li>
+    </ul>
 
-## Usage
-1. Select broker and execution type.
-2. Enter trade details: position (long/short), entry price, stoploss, exit price, and quantity or risk amount.
-3. Click "Calculate" to view target levels, gross and net P&L, and charges.
-4. Add trades to the basket for portfolio management.
-5. Save or import trade data for further analysis.
+    <h2>Usage</h2>
+    <ol>
+      <li>Select broker and execution type (Intraday/Delivery).</li>
+      <li>Input your position (Long/Short), entry, stoploss, exit, and quantity or risk.</li>
+      <li>Press <b>Calculate</b> to view trade targets, breakdown and basket summary.</li>
+      <li>Optionally, save or import trades for later review.</li>
+    </ol>
 
-## Technologies
-- HTML5, CSS, JavaScript
-- Works in modern web browsers
+    <h2>Technologies</h2>
+    <ul>
+      <li>HTML5, CSS, JavaScript &mdash; pure client-side</li>
+      <li>Optimized for fast use in all modern browsers</li>
+    </ul>
 
-## License
-This project is licensed under BSD-3-Clause license.
+    <h2>License</h2>
+    <p>BSD-3-Clause — Free for personal and professional trading analysis.</p>
 
-## Author
-Ajman Nishal T (Kelizo)
+    <h2>Author</h2>
+    <p>
+      Ajman Nishal T (Kelizo)
+    </p>
+    <p>
+      For feedback, improvements, or issue reporting: contact me on
+      <a href="https://www.linkedin.com/in/ajmannishal" target="_blank" rel="noopener noreferrer">
+        LinkedIn.
+      </a>
+    </p>
 
-For any issues or suggestions, feel free to contact.
-<button id="about-btn" onclick="window.location.href='https://ajmankelizo.github.io/trade_manager/';">
-  Back to Home
-</button>
+    <div class="disclaimer">
+      <b>Disclaimer:</b><br>
+      Trade Manager is a trader’s utility and <u>not investment advice</u>. Calculations are provided for educational and analytical purposes only. Markets are risky—users must verify all numbers before actual trades. The author is not liable for losses, incorrect data, or decisions made using this tool.
+    </div>
+  </div>
+</body>
+</html>
